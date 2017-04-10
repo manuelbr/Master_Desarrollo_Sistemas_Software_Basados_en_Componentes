@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy xmlns="http://www.apache.org/ode/schemas/dd/2007/03" xmlns:main="http://main" xmlns:statusEmpleado="http://statusEmpleado">
+  <process name="statusEmpleado:StatusEmpleado">
+    <active>true</active>
+    <retired>false</retired>
+    <in-memory>false</in-memory>
+    <process-events generate="all"/>
+    <provide partnerLink="client">
+      <service name="main:mainService" port="mainPort"/>
+    </provide>
+  </process>
+  <process name="main:main">
+    <active>true</active>
+    <retired>false</retired>
+  </process>
+</deploy>
