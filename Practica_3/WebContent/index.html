@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Formulario de creación de una película</title>
+ </head>
+<body>
+<div id="inner" style="display:center;">
+        <form action="../BlancoManuel-p3/rest/peliculas/inserta" method="POST">
+        <label for="id">ID</label>
+        <input name="id" />
+        <br/>
+        <label for="titulo">Título</label>
+        <input name="titulo" />
+        <br/>
+		<label for="duracion">Duración</label>
+        <input name="duracion" />
+		<br/>
+		<label for="año">Año</label>
+        <input name="año" />
+		<br/>
+        Resumen:
+        <TEXTAREA NAME="resumen" COLS=40 ROWS=10></TEXTAREA>
+        <br/>
+        <input type="submit" value="Submit" />
+        </form>
+</div>
+</body>
+</html>
+
