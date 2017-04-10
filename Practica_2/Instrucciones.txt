@@ -1,0 +1,15 @@
+	Práctica 2 DSS Master en Ingeniería Informática, por Manuel Blanco Rienda
+
+---Dependencias del proyecto
+
+Al importar el proyecto, se debe incluir en el "java build-path" todos los .jar del directorio lib del proyecto.
+Esto es: derby.jar, eclipselink.jar, javax.persistence...jar, servlet-api.jar. Por otro lado, en la opción
+Project Facets del proyecto, se deben activar las opciones: dynamic web (versión 3.3), java (versión 1.8) y JPA (versión 
+2.1). Cuando se seleccione la opción JPA, en "Further configuration" se debe añadir como biblioteca la carpeta que se 
+encuentra en el directorio lib del proyecto: jpa_downloaded/eclipselink, tras lo cual se le debe añadir de forma manual
+a esa misma libreria el derby.jar que incluimos en el java build path del principio.
+
+--Funcionamiento del proyecto
+
+1º- Se ejecuta el servlet "ListaCorreoServlet" en el servidor Tomcat.
+2º- Se ejecuta la clase cliente.java como aplicación java. 
